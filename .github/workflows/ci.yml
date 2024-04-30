@@ -33,6 +33,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          # nvm use 16.13.0
           npm -v
           node -v
+      - run: npm version 15341 --no-git-tag-version
+      
